@@ -1,7 +1,7 @@
 module.exports = {
     "title": "VuePress",
     "description": "Vue 驱动的静态网站生成器",
-    "base": "/doc/",
+    "base": "/.vuepress/dist/",
     themeConfig: {
         nav: [
             { text: 'Home', link: '/' },
