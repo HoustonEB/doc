@@ -1,0 +1,27 @@
+{
+  "name": "doc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "vuepress": "^0.14.2"
+  },
+  "scripts": {
+    "start": "vuepress dev docs",
+    "run build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HoustonEB/doc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HoustonEB/doc/issues"
+  },
+  "homepage": "https://github.com/HoustonEB/doc#readme"
+}
