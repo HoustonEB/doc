@@ -12,7 +12,7 @@
   },
   "scripts": {
     "start": "vuepress dev docs",
-    "run build": "vuepress build docs"
+    "build": "vuepress build docs"
   },
   "repository": {
     "type": "git",
