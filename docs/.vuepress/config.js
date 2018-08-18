@@ -6,7 +6,7 @@ module.exports = {
         nav: [
             { text: 'Home', link: '/' },
             { text: 'Guide', link: '/guide/' },
-            { text: 'External', link: 'https://google.com' },
+            { text: 'External', link: 'https://baidu.com' },
         ],
         // sidebar: [
         //     ['/guide/page-a', 'page-a.md'],
@@ -14,8 +14,21 @@ module.exports = {
         // ],
         sidebar: [
             {
-              title: 'Group 1',
-              collapsable: false,
+              title: 'React',
+              children: [
+                ['/guide/page-a', 'page-a.md'],
+                ['/guide/', 'README.md']
+              ]
+            },
+            {
+              title: 'Mobx',
+              children: [
+                ['/guide/page-a', 'page-a.md'],
+                ['/guide/', 'README.md']
+              ]
+            },
+            {
+              title: 'Redux',
               children: [
                 ['/guide/page-a', 'page-a.md'],
                 ['/guide/', 'README.md']
