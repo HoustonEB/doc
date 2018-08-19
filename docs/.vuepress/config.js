@@ -23,7 +23,7 @@ module.exports = {
             {
               title: 'Mobx',
               children: [
-                ['/guide/page-a', 'page-a.md'],
+                ['/guide/page-a', 'page-a哈哈.md'],
                 ['/guide/', 'README.md']
               ]
             },
