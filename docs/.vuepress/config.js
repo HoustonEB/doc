@@ -15,31 +15,29 @@ module.exports = {
         sidebar: [
             {
               title: 'React',
+              collapsable: false,
               children: [
-                ['/guide/page-a', 'page-a.md'],
-                ['/guide/', 'README.md']
+                ['/React/', 'README.md']
               ]
             },
             {
               title: 'Mobx',
               children: [
-                ['/guide/page-a', 'page-a.md'],
-                ['/guide/', 'README.md']
+                ['/Mobx/observable/objects', 'objects'],
+                ['/Mobx/observable/arrays', 'arrays']
               ]
             },
             {
               title: 'Redux',
               children: [
-                ['/guide/page-a', 'page-a.md'],
-                ['/guide/', 'README.md']
+                ['/Redux/', 'README.md']
               ]
             },
             {
-              title: 'Group 2',
-              children: [ 
-                ['/guide/page-a', 'page-a.md'],
-                ['/guide/', 'README.md'],
-                ]
+              title: 'Git',
+              children: [
+                ['/Git/Branch', 'Branch']
+              ]
             }
           ]
     }
