@@ -23,8 +23,13 @@ module.exports = {
             {
               title: 'Mobx',
               children: [
+<<<<<<< HEAD
                 ['/Mobx/observable/objects', 'objects'],
                 ['/Mobx/observable/arrays', 'arrays']
+=======
+                ['/guide/page-a', 'page-a哈哈.md'],
+                ['/guide/', 'README.md']
+>>>>>>> develop
               ]
             },
             {
