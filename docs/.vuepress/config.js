@@ -17,7 +17,7 @@ module.exports = {
               title: 'React',
               collapsable: false,
               children: [
-                ['/React/', 'README.md']
+                ['/React/Reader', 'Reader']
               ]
             },
             {
@@ -31,7 +31,7 @@ module.exports = {
             {
               title: 'Redux',
               children: [
-                ['/Redux/', 'README.md']
+                ['/Redux/Reader', 'Reader']
               ]
             },
             {

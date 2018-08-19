@@ -12,7 +12,8 @@
   },
   "scripts": {
     "start": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "build": "vuepress build docs",
+    "clean": "npm run clean"
   },
   "repository": {
     "type": "git",
