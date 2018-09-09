@@ -21,6 +21,13 @@ module.exports = {
               ]
             },
             {
+              title: 'JS',
+              children: [
+                ['/JS/面向对象编程', '面向对象编程']
+
+              ]
+            },
+            {
               title: 'Mobx',
               children: [
                 ['/Mobx/observable/objects', 'objects'],
