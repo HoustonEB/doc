@@ -17,7 +17,7 @@ module.exports = {
               title: 'React',
               collapsable: false,
               children: [
-                ['/React/Reader', 'Reader']
+                ['/React/State VS Props', 'State VS Props']
               ]
             },
             {
@@ -39,6 +39,12 @@ module.exports = {
               title: 'Redux',
               children: [
                 ['/Redux/Reader', 'Reader']
+              ]
+            },
+            {
+              title: 'Echarts',
+              children: [
+                ['/Echarts/Echarts', 'Echarts']
               ]
             },
             {
