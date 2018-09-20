@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Echarts Api | VuePress</title>
+    <meta name="description" content="Vue 驱动的静态网站生成器">
+    
+    
+    <link rel="preload" href="/doc/assets/css/0.styles.cb57cf06.css" as="style"><link rel="preload" href="/doc/assets/js/app.82c430da.js" as="script"><link rel="preload" href="/doc/assets/js/4.cbaf0721.js" as="script"><link rel="prefetch" href="/doc/assets/js/2.234811cb.js"><link rel="prefetch" href="/doc/assets/js/3.aad1f9d2.js"><link rel="prefetch" href="/doc/assets/js/5.a45cfe86.js"><link rel="prefetch" href="/doc/assets/js/6.484cfc7a.js"><link rel="prefetch" href="/doc/assets/js/7.70fe03ae.js"><link rel="prefetch" href="/doc/assets/js/8.6a1adfd5.js"><link rel="prefetch" href="/doc/assets/js/9.93383568.js"><link rel="prefetch" href="/doc/assets/js/10.c58cb904.js"><link rel="prefetch" href="/doc/assets/js/11.1bc17905.js">
+    <link rel="stylesheet" href="/doc/assets/css/0.styles.cb57cf06.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/doc/" class="home-link router-link-active"><!----> <span class="site-name">VuePress</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/doc/" class="nav-link">Home</a></div><div class="nav-item"><a href="/doc/guide/" class="nav-link">Guide</a></div><div class="nav-item"><a href="https://baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/doc/" class="nav-link">Home</a></div><div class="nav-item"><a href="/doc/guide/" class="nav-link">Guide</a></div><div class="nav-item"><a href="https://baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading"><span>React</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/doc/React/State VS Props.html" class="sidebar-link">State VS Props</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>JS</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Mobx</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Redux</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>Echarts</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/doc/Echarts/Echarts.html" class="active sidebar-link">Echarts</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/doc/Echarts/Echarts.html#echarts-api" class="sidebar-link">Echarts Api</a></li></ul></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Git</span> <span class="arrow right"></span></p> <!----></div></li></ul> </div> <div class="page"> <div class="content"><h2 id="echarts-api"><a href="#echarts-api" aria-hidden="true" class="header-anchor">#</a> Echarts Api</h2> <p><img src="/doc/assets/img/echarts1.192ea694.jpg" alt="echarts1"></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @file: comp.js
+ * @author: yuzhuang
+ */</span>
+
+<span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span>Component<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>h<span class="token punctuation">,</span> r<span class="token punctuation">,</span> c<span class="token punctuation">,</span> observable<span class="token punctuation">,</span> setProps<span class="token punctuation">,</span> action<span class="token punctuation">,</span> model<span class="token punctuation">,</span> observer<span class="token punctuation">,</span> suh<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'utils/erp'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> ECharts <span class="token keyword">from</span> <span class="token string">'comps/EChartsForReact'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token constant">CLASS_PREFIX</span> <span class="token operator">=</span> <span class="token string">'part-list2-'</span><span class="token punctuation">;</span>
+@model
+@observer
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">IndexPage</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+
+@action
+<span class="token function">getOption</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        tooltip <span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            trigger<span class="token punctuation">:</span> <span class="token string">'axis'</span><span class="token punctuation">,</span>
+            axisPointer <span class="token punctuation">:</span> <span class="token punctuation">{</span>            <span class="token comment">// 坐标轴指示器，坐标轴触发有效</span>
+                type <span class="token punctuation">:</span> <span class="token string">'line'</span>        <span class="token comment">// 默认为直线，可选为：'line' | 'shadow'</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token comment">// legend: { // 图例</span>
+        <span class="token comment">//     data:['直接访问','邮件营销','联盟广告','视频广告','搜索引擎','百度','谷歌','必应','其他']</span>
+        <span class="token comment">// },</span>
+        grid<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            left<span class="token punctuation">:</span> <span class="token string">'3%'</span><span class="token punctuation">,</span>
+            right<span class="token punctuation">:</span> <span class="token string">'4%'</span><span class="token punctuation">,</span>
+            top<span class="token punctuation">:</span> <span class="token string">'20%'</span><span class="token punctuation">,</span>
+            containLabel<span class="token punctuation">:</span> <span class="token boolean">true</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        xAxis <span class="token punctuation">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+                type <span class="token punctuation">:</span> <span class="token string">'category'</span><span class="token punctuation">,</span>
+                data <span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'周一'</span><span class="token punctuation">,</span><span class="token string">'周二'</span><span class="token punctuation">,</span><span class="token string">'周三'</span><span class="token punctuation">,</span><span class="token string">'周四'</span><span class="token punctuation">,</span><span class="token string">'周五'</span><span class="token punctuation">,</span><span class="token string">'周六'</span><span class="token punctuation">,</span><span class="token string">'周日'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                axisTick<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token comment">// 坐标轴刻度</span>
+                    show<span class="token punctuation">:</span> <span class="token boolean">false</span> <span class="token comment">// 隐藏坐标轴刻度</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                axisLabel<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token comment">// 坐标轴刻度标签的设置</span>
+                    rotate<span class="token punctuation">:</span> <span class="token number">60</span><span class="token punctuation">,</span>
+                    color<span class="token punctuation">:</span> <span class="token string">'red'</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        yAxis <span class="token punctuation">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+                type <span class="token punctuation">:</span> <span class="token string">'value'</span><span class="token punctuation">,</span>
+                show<span class="token punctuation">:</span> <span class="token boolean">false</span> <span class="token comment">// 隐藏y轴</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        series <span class="token punctuation">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+                name<span class="token punctuation">:</span><span class="token string">'搜索引擎'</span><span class="token punctuation">,</span>
+                type<span class="token punctuation">:</span><span class="token string">'bar'</span><span class="token punctuation">,</span>
+                barWidth <span class="token punctuation">:</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token comment">// 柱状数据图宽度</span>
+                stack<span class="token punctuation">:</span> <span class="token string">'搜索引擎'</span><span class="token punctuation">,</span> <span class="token comment">// stack相同则值可以堆叠(在一个柱形中)</span>
+                data<span class="token punctuation">:</span><span class="token punctuation">[</span><span class="token number">862</span><span class="token punctuation">,</span> <span class="token number">1018</span><span class="token punctuation">,</span> <span class="token number">964</span><span class="token punctuation">,</span> <span class="token number">1026</span><span class="token punctuation">,</span> <span class="token number">1679</span><span class="token punctuation">,</span> <span class="token number">1600</span><span class="token punctuation">,</span> <span class="token number">1570</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                label<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token comment">// 图形上的文本标签,名称值等</span>
+                    normal<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                        show<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+                        position<span class="token punctuation">:</span> <span class="token string">'inside'</span><span class="token comment">// 值的位置</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                markLine <span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token comment">// 图标标线</span>
+                    symbol<span class="token punctuation">:</span> <span class="token string">'none'</span><span class="token punctuation">,</span> <span class="token comment">// 标线两段的标记类型</span>
+                    data<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">{</span>
+                            yAxis<span class="token punctuation">:</span> <span class="token number">500</span>
+                        <span class="token punctuation">}</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    label<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                        normal<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                            show<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+                            formatter<span class="token punctuation">:</span> <span class="token string">'10\n23'</span><span class="token punctuation">,</span>
+                            color<span class="token punctuation">:</span> <span class="token string">'orange'</span>
+                        <span class="token punctuation">}</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                    lineStyle<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                        normal<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                            color<span class="token punctuation">:</span> <span class="token string">'orange'</span><span class="token punctuation">,</span>
+                            type<span class="token punctuation">:</span> <span class="token string">'dashed'</span>
+                        <span class="token punctuation">}</span>
+
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                name<span class="token punctuation">:</span><span class="token string">'百度'</span><span class="token punctuation">,</span>
+                type<span class="token punctuation">:</span><span class="token string">'bar'</span><span class="token punctuation">,</span>
+                barWidth <span class="token punctuation">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+                stack<span class="token punctuation">:</span> <span class="token string">'搜索引擎'</span><span class="token punctuation">,</span>
+                data<span class="token punctuation">:</span><span class="token punctuation">[</span><span class="token number">620</span><span class="token punctuation">,</span> <span class="token number">732</span><span class="token punctuation">,</span> <span class="token number">701</span><span class="token punctuation">,</span> <span class="token number">734</span><span class="token punctuation">,</span> <span class="token number">1090</span><span class="token punctuation">,</span> <span class="token number">1130</span><span class="token punctuation">,</span> <span class="token number">1120</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                label<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                    normal<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                        show<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+                        position<span class="token punctuation">:</span> <span class="token string">'top'</span> <span class="token comment">// 在柱状图上方</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                markLine<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token comment">// 图标标线</span>
+                    symbol<span class="token punctuation">:</span> <span class="token string">'none'</span><span class="token punctuation">,</span>
+                    data<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">{</span>
+                            yAxis<span class="token punctuation">:</span> <span class="token number">200</span>
+                        <span class="token punctuation">}</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    label<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token comment">// 图标标线的标签样式设置</span>
+                        normal<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                            show<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+                            formatter<span class="token punctuation">:</span> <span class="token string">'10\n23'</span><span class="token punctuation">,</span>
+                            color<span class="token punctuation">:</span> <span class="token string">'skyblue'</span>
+                        <span class="token punctuation">}</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+                    lineStyle<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                        normal<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                            color<span class="token punctuation">:</span> <span class="token string">'skyblue'</span><span class="token punctuation">,</span>
+                            type<span class="token punctuation">:</span> <span class="token string">'solid'</span>
+                        <span class="token punctuation">}</span>
+
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">renderEcharts</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+        <span class="token function">h</span><span class="token punctuation">(</span>ECharts<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+            option<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getOption</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+        h<span class="token punctuation">.</span><span class="token function">div</span><span class="token punctuation">(</span><span class="token function">c</span><span class="token punctuation">(</span><span class="token constant">CLASS_PREFIX</span> <span class="token operator">+</span> <span class="token string">'wrapper'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+                style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                    width<span class="token punctuation">:</span> <span class="token string">'900px'</span><span class="token punctuation">,</span>
+                    height<span class="token punctuation">:</span> <span class="token string">'300px'</span><span class="token punctuation">,</span>
+                    border<span class="token punctuation">:</span> <span class="token string">'1px solid #E8E8E8'</span><span class="token punctuation">,</span>
+                    display<span class="token punctuation">:</span> <span class="token string">'inline-block'</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            h<span class="token punctuation">.</span><span class="token function">div</span><span class="token punctuation">(</span><span class="token string">'echarts-demo'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+                    style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                        width<span class="token punctuation">:</span> <span class="token string">'50%'</span><span class="token punctuation">,</span>
+                        height<span class="token punctuation">:</span> <span class="token string">'300px'</span><span class="token punctuation">,</span>
+                        display<span class="token punctuation">:</span> <span class="token string">'inline-block'</span><span class="token punctuation">,</span>
+                        border<span class="token punctuation">:</span> <span class="token string">'1px solid #E8E8E8'</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">renderEcharts</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">)</span><span class="token punctuation">,</span>
+            h<span class="token punctuation">.</span><span class="token function">div</span><span class="token punctuation">(</span><span class="token string">'echarts-demo'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+                    style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                        width<span class="token punctuation">:</span> <span class="token string">'50%'</span><span class="token punctuation">,</span>
+                        height<span class="token punctuation">:</span> <span class="token string">'300px'</span><span class="token punctuation">,</span>
+                        display<span class="token punctuation">:</span> <span class="token string">'inline-block'</span><span class="token punctuation">,</span>
+                        border<span class="token punctuation">:</span> <span class="token string">'1px solid #E8E8E8'</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">renderEcharts</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">)</span>
+        <span class="token punctuation">)</span>
+    <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+</code></pre></div><p><img src="/doc/assets/img/echarts2.e9d0edcb.jpg" alt="echarts2"></p></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/doc/Redux/Reader.html" class="prev">
+          Reader
+        </a></span> <span class="next"><a href="/doc/Git/Branch.html">
+          Branch
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/doc/assets/js/4.cbaf0721.js" defer></script><script src="/doc/assets/js/app.82c430da.js" defer></script>
+  </body>
+</html>
