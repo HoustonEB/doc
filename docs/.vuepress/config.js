@@ -52,6 +52,12 @@ module.exports = {
               children: [
                 ['/Git/Branch', 'Branch']
               ]
+            },
+            {
+              title: 'Webpack',
+              children: [
+                ['/Webpack/Webpack', 'Quick Start']
+              ]
             }
           ]
     }
