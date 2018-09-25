@@ -178,7 +178,60 @@ Less打包
 
 Sass打包
 
-ES6转ES5
+#### JS编译
+
+**Why Need To Be Compiled**
+
+1. 浏览器不能完全支持js的新语法.
+2. JSX and TS不能再PC端运行.
+
+**Babel**
+
+​	Babel是JS的编译器(compiler)
+
+**Usage**
+
+```shell
+npm install -D babel-loader @babel/core @babel/preset-react
+```
+
+`@babel/preset-react`是react需要的预设环境包括编译JSX.
+
+新版本的Babel进行了名称的修整,`babel => @babel/`,preset和plugin的名字会从包中移除.
+
+`@babel/preset-react` => `@babel/react` (this is equivalent)
+
+#### Development
+
+```shell
+devtool: "inline-source-map" // 定位错误在哪个文件那一行.
+```
+
+```shell
+package.json =>
+"watch": "webpack --watch" // 当代码修改时重新编译,但是浏览器不会自动刷新.
+```
+
+```shell
+npm install -D webpack-dev-server
+```
+
+```shell
+package.json =>
+"start": "webpack-dev-server --open --host 127.0.0.1"
+```
+
+配置web-dev-server时报个错(因为本地的hosts文件里设置localhost => 127.0.0.1)所以找不到.但是配了依然找不到.so 临时加入--host 127.0.0.1配置.
+
+```shell
+events.js:154
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: getaddrinfo ENOTFOUND localhost
+    at errnoException (dns.js:26:10)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:77:26)
+```
 
  
 
