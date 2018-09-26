@@ -15,7 +15,7 @@ module.exports = {
         sidebar: [
             {
               title: 'React',
-              collapsable: false,
+              // collapsable: false,
               children: [
                 ['/React/State VS Props', 'State VS Props']
               ]
@@ -23,8 +23,8 @@ module.exports = {
             {
               title: 'JS',
               children: [
-                ['/JS/面向对象编程', '面向对象编程']
-
+                ['/JS/面向对象编程', '面向对象编程'],
+                ['/JS/Module', 'Module']
               ]
             },
             {
@@ -57,6 +57,12 @@ module.exports = {
               title: 'Webpack',
               children: [
                 ['/Webpack/Webpack', 'Quick Start']
+              ]
+            },
+            {
+              title: 'Node',
+              children: [
+                ['/Node/Node', 'Node']
               ]
             }
           ]

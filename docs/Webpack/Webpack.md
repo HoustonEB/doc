@@ -89,7 +89,7 @@ document.body.appendChild(component());
 npm install --save lodash
 ```
 
-> 当安装的package会被打包进production bundle,你应该用`npm install --save`.如果你将要安装的包是为了开发用的目的,因该用`npm install --save-dev`.[学习更多npm](https://docs.npmjs.com/cli/install)
+> 当安装的package需要被打包进production bundle,你应该用`npm install --save`.如果你将要安装的包是为了开发用的目的,因该用`npm install --save-dev`.[学习更多npm](https://docs.npmjs.com/cli/install)
 
 1. npx是npm中的一个包执行命令相当于执行了node_modules中的.bin文件下的webpack.cmd命令
 2. 所以可以用下图命令代替
@@ -132,18 +132,6 @@ webpack.config.js是webpack中的配置文件，可以自定义设置
 
 “build-watch”: “webpack --watch”
 
-# Mode
-
-![img](file:///C:/Users/pc/AppData/Local/Temp/msohtmlclip1/01/clip_image028.jpg)
-
-在webpack.config.js中存在配置mode(模式)—
-
-1-   development(开发模式)--不压缩模式适合开发打包速度快
-
-2-   production(生产模式)--上线开启此种方式进行打包会压缩代码
-
-3-   设置了mode后打包后就不会再发出警告信息说未设置mode
-
 ## Using source maps
 
 ![img](file:///C:/Users/pc/AppData/Local/Temp/msohtmlclip1/01/clip_image030.jpg)
@@ -178,6 +166,36 @@ Less打包
 
 Sass打包
 
+## Asset Management
+
+Prior to webpack(在webpack之前),前端开发者回利用grunt和gulp,来处理(process)图片等资源.移动它们从/src目录到/dist或者/build目录.这种idea同样会被用在js模块中,但是像webpack这样的工具,会动态地打包(**dynamically bundle**)依赖项(创造所谓的依赖图).
+
+This is great because every module now *explicitly(明确地) states(规定) its dependencies* and we'll avoid bundling modules that aren't in use.
+
+##### CSS
+
+为了在 JS module中引入(import)css文件,需要引入style-loader和css-loader.
+
+```bash
+npm install -D style-loader css-loader
+```
+
+**使用less** 需要安装less和less-loader
+
+```bash
+npm install -D less less-loader
+```
+
+##### Image&Fonts
+
+为了在 JS module中引入图片资源(png|jpg|gif|svg)和字体资源(woff|woff2|eot|ttf|otf),需要使用file-loader.
+
+```bash
+npm install -D file-loader
+```
+
+---
+
 #### JS编译
 
 **Why Need To Be Compiled**
@@ -201,6 +219,8 @@ npm install -D babel-loader @babel/core @babel/preset-react
 
 `@babel/preset-react` => `@babel/react` (this is equivalent)
 
+---
+
 #### Development
 
 ```shell
@@ -209,11 +229,11 @@ devtool: "inline-source-map" // 定位错误在哪个文件那一行.
 
 ```shell
 package.json =>
-"watch": "webpack --watch" // 当代码修改时重新编译,但是浏览器不会自动刷新.
+"watch": "webpack --watch" // 当代码修改时只能重新编译,但是浏览器不会自动刷新.
 ```
 
 ```shell
-npm install -D webpack-dev-server
+npm install -D webpack-dev-server // 所以使用热加载(重新编译,自动刷新)
 ```
 
 ```shell
@@ -233,6 +253,25 @@ Error: getaddrinfo ENOTFOUND localhost
     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:77:26)
 ```
 
- 
+---
 
- 
+ #### Production
+
+生产环境和开发环境的区别:
+
+1. 生产环境压缩代码.
+2. 生产环境使用节省性能的source-map,开发环境使用debug方便的source-map.
+
+---
+
+#### webpack-merge 
+
+```bash
+npm install -D webpack-merge
+```
+
+1. webpack.common.js包含通用的打包代码.
+2. webpack.dev.js包含开发的代码.
+3. webpack.prod.js包含生产的代码.
+
+利用webpack-merge,可以将common的代码合入到dev和生产的代码.
