@@ -23,7 +23,8 @@ module.exports = {
         title: 'JS',
         children: [
           ['/JS/面向对象编程', '面向对象编程'],
-          ['/JS/Module', 'Module']
+          ['/JS/Module', 'Module'],
+          ['/JS/Promise', 'Promise']     
         ]
       },
       {

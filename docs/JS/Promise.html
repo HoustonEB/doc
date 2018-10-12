@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function add1(resolve, reject) {
+        setTimeout(function() {
+            var num = num + 1;
+            resolve(num)
+        }, 2000)
+    }
+
+    function add2(resolve, reject) {
+        setTimeout(function() {
+            var num = num +2;
+            resolve(num)
+        }, 1000)
+    }
+    function print(resolve, reject) {
+        console.log('print  =>   ' + num);
+    }
+    new Promise(add1()).then(add2(value)).then(print(value));
+</script>
+</html>
