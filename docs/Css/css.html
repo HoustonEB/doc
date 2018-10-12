@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .text-overflow {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            border: 1px dashed #e8e8;
+            font-size: 12px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .word-wrap {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            margin-left: 20px;
+            border: 1px solid #e8e8e8;
+            font-size: 12px;
+            word-wrap: break-word;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+    <!-- 文本溢出隐藏 -->
+    <div class="text-overflow">
+        文本溢出隐藏===================黄四大行i说说滴是啥<br/>
+        sdjosfd哈 <hr />好的josjfo
+    </div>
+    <div class="word-wrap">
+        换手机抖擞精看 this is a applefdsfsdfsdfsdsdfsfs 收快递时间好快大河坎电圣诞节哦i收到
+    </div>
+</body>
+</html>
