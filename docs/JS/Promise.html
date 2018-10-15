@@ -1,31 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
-    
+
 </body>
 <script>
-    function add1(resolve, reject) {
-        setTimeout(function() {
-            var num = num + 1;
-            resolve(num)
-        }, 2000)
-    }
+    /*---------------1-----------------*/
+    // let p = Promise.resolve(1);
+    // p.then(function (v) {
+    //     console.log(v);
+    //     return new Promise(((resolve, reject) => {
+    //         setTimeout(function () {
+    //             resolve(v * 4);
+    //         }, 2000)
+    //     }))
+    // }).then(function (v) {
+    //     console.log(v);
+    // })
+    // 1, 4
 
-    function add2(resolve, reject) {
-        setTimeout(function() {
-            var num = num +2;
-            resolve(num)
-        }, 1000)
-    }
-    function print(resolve, reject) {
-        console.log('print  =>   ' + num);
-    }
-    new Promise(add1()).then(add2(value)).then(print(value));
+    /*---------------2-----------------*/
+    let p1 = Promise.resolve(1);
+    p1
+        .then(function (v) {
+            console.log(v);
+            foo(); // 报个错
+            return Promise.resolve(3) // 不会执行到这
+        }, function (err) {
+            console.log(err) // 只会接受上一个Promise的错误信息
+        })
+        .then(function (v) {
+            console.log(v) // 不会执行到这
+        }, function (err) {
+            console.log('错误问题', err) // 接受上一个Promise的报错,foo => undefined
+            return '错误仍然可以传值'
+        })
+        .then(function (v) {
+            console.log(v, 2); // '错误仍然可以传值'
+        }, function (err) {
+            console.log(err, 1);
+        })
+/*---------------3-----------------*/
+// let p2 = Promise.resolve(1).then(Promise.resolve(2)).then(function(v) {
+//     console.log(v); // 1 => then中参数传入非函数时,解释为then(null),
+//                     // 导致前一个Promise的结果穿透到下一个Promise中,所以then中要传入函数.
+// });
+// let p3 = Promise.resolve(1).then(return Promise.resolve(2)).then(function(v) {
+//     console.log(v) // Uncaught SyntaxError: Unexpected token return
+// });
+// Promise.resolve(1).then(null).then((v) => {
+//   console.log(v) // 1
+// })
+
+// Promise.resolve(1).then(return 2).then((v) => {
+//   console.log(v) // Uncaught SyntaxError: Unexpected token return
+// })
+
+// Promise.resolve(1).then(() => {
+//   return 2
+// }).then((v) => {
+//   console.log(v) // 2
+// })
 </script>
+
 </html>
