@@ -66,4 +66,34 @@ Object.defineProperty(o, "a", {
 });
 ```
 #### Vue双向绑定的简易实现
-
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input id="username" type="text">
+</body>
+<script>
+    var ip = document.getElementById('username');
+    ip.addEventListener('input', function(e) {
+        obj.userName = e.target.value;
+        console.log(obj.userName, e.target.value)
+    })
+    let obj = {};
+    Object.defineProperty(obj, 'userName', {
+        get: function() {
+            return document.getElementById('username').value;
+        },
+        set: function(value) {
+            document.getElementById('username').value = value;
+        }
+    });
+    obj.userName = 'yu';
+</script>
+</html>
+```

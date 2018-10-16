@@ -11,7 +11,7 @@
 </body>
 <script>
     var ip = document.getElementById('username');
-    ip.addEventListener('onchange', function(e) {
+    ip.addEventListener('input', function(e) {
         obj.userName = e.target.value;
         console.log(obj.userName, e.target.value)
     })
@@ -24,7 +24,7 @@
             document.getElementById('username').value = value;
         }
     });
-    obj.userName = 'yu ';
+    obj.userName = 'yu';
     // let obj = {};
     // Object.defineProperty(obj, 'a', {
     //     value: 'new1',
