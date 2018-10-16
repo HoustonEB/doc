@@ -7,6 +7,38 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <input id="username" type="text">
 </body>
+<script>
+    var ip = document.getElementById('username');
+    ip.addEventListener('onchange', function(e) {
+        obj.userName = e.target.value;
+        console.log(obj.userName, e.target.value)
+    })
+    let obj = {};
+    Object.defineProperty(obj, 'userName', {
+        get: function() {
+            return document.getElementById('username').value;
+        },
+        set: function(value) {
+            document.getElementById('username').value = value;
+        }
+    });
+    obj.userName = 'yu';
+    // let obj = {};
+    // Object.defineProperty(obj, 'a', {
+    //     value: 'new1',
+    //     writable: true,
+    //     enumerable: true
+    // });
+    // Object.defineProperty(obj, 'b', {
+    //     value: 'new2',
+    //     enumerable: false
+    // });
+    // obj.a = 'io';
+    // for(var a in obj) {
+    //     console.log(a, 2)
+    // }
+    // console.log(obj)
+</script>
 </html>

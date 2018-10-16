@@ -24,7 +24,8 @@ module.exports = {
         children: [
           ['/JS/面向对象编程', '面向对象编程'],
           ['/JS/Module', 'Module'],
-          ['/JS/Promise', 'Promise']     
+          ['/JS/Promise', 'Promise'],
+          ['/JS/Object', 'Object'],
         ]
       },
       {
