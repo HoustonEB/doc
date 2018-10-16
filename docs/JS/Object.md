@@ -1,4 +1,4 @@
-## Object.defineProperty
+## Object.defineProperty()
 ::: tip
 Object.defineProperty(obj, props, descriptor)<br />
 obj => 要在其上定义属性的对象<br />
@@ -96,4 +96,67 @@ Object.defineProperty(o, "a", {
     obj.userName = 'yu';
 </script>
 </html>
+```
+## Object.assign()
+Object.assign(),用于将所有可被枚举的属性的值从一个或多个源对象复制到目标对象,并返回目标对象.
+::: tip
+Object.assign(target, ...sources)<br />
+target => 目标对象
+sources => 被复制的一些源对象
+:::
+### basic usage
+```js
+let obj = {};
+Object.assign(obj, {a:1});
+console.log(obj) // {a: 1}
+```
+**非深拷贝**
+```js
+let obj = {};
+let obj1 = {a:1, b:{c:0}}
+Object.assign(obj, obj1);
+console.log(obj); // {a: 1, b: {c: 0}}
+obj1.a = 2;
+obj.b.c = 3; // 会影响目标对象的值
+console.log(obj, 2) // {a: 1, b: {c: 3}}
+
+/*---------深拷贝-------------*/
+let obj1 = {a:1, b:{c:0}}
+let obj2 = JSON.parse(JSON.stringify(obj1));
+obj1.b.c = 3;
+console.log(obj2); // { a: 1, b: { c: 0 } }
+```
+**合并对象**
+```js
+var o1 = { a: 1 };
+var o2 = { b: 2 };
+var o3 = { c: 3 };
+
+var obj = Object.assign(o1, o2, o3);
+console.log(obj); // { a: 1, b: 2, c: 3 }
+console.log(o1);  // { a: 1, b: 2, c: 3 }, 注意目标对象自身也会改变。
+```
+**合并具有相同属性的对象**
+```js
+var o1 = { a: 1, b: 1, c: 1 };
+var o2 = { b: 2, c: 2 };
+var o3 = { c: 3 };
+
+var obj = Object.assign({}, o1, o2, o3);
+console.log(obj); // { a: 1, b: 2, c: 3 }
+```
+**继承属性和不可枚举属性是不能拷贝的**
+```js
+var obj = Object.create({foo: 1}, { // foo 是个继承属性。
+    bar: {
+        value: 2  // bar 是个不可枚举属性。
+    },
+    baz: {
+        value: 3,
+        enumerable: true  // baz 是个自身可枚举属性。
+    }
+});
+
+var copy = Object.assign({}, obj);
+console.log(copy); // { baz: 3 }
 ```
