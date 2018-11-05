@@ -9,7 +9,7 @@ this.state.property = 'value'
 this.setState({property: 'value'})
 ```
 ---
-### State的更新可能是异步的
+### State的更新是异步的
 React为了性能(performance)会将多批次的`setState`统一进行一次更新.
 因为**this.props**和**this.state**的值更新是异步的,所以下一次state的更新不能依赖它们.
 ```js
