@@ -1,3 +1,12 @@
+## Object.keys()
+::: tip
+入参-对象<br />
+返回-对象可枚举的属性数组
+:::
+```js
+let obj = {a: 1, b: 2};
+console.log(Object.keys(obj)); // ["a", "b"]
+```
 ## Object.defineProperty()
 ::: tip
 Object.defineProperty(obj, props, descriptor)<br />
