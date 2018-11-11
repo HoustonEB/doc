@@ -16,7 +16,8 @@ module.exports = {
       {
         title: 'Css',
         children: [
-          ['/Css/文本处理', '文本处理']
+          ['/Css/文本处理', '文本处理'],
+          ['/Css/布局', '布局']
         ]
       },
       {
