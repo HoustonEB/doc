@@ -13,6 +13,12 @@ module.exports = {
     //     ['/guide/', 'README.md'],
     // ],
     sidebar: [
+        {
+            title: 'H5',
+            children: [
+                ['/H5/Draggable', '拖拽'],
+            ]
+        },
       {
         title: 'Css',
         children: [
