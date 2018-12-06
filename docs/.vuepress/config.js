@@ -27,6 +27,12 @@ module.exports = {
         ]
       },
       {
+        title: 'Layout',
+        children: [
+          ['/Layout/Flex', 'Flex']
+        ]
+      },
+      {
         title: 'JS',
         children: [
           ['/JS/面向对象编程', '面向对象编程'],
