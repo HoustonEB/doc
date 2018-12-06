@@ -79,6 +79,12 @@ module.exports = {
         children: [
           ['/Node/Node', 'Node']
         ]
+      },
+      {
+        title: 'RegExr',
+        children: [
+          ['/RegExr/RegExr', '正则匹配表达式']
+        ]
       }
     ]
   }
