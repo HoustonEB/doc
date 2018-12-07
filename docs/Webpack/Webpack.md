@@ -275,3 +275,8 @@ npm install -D webpack-merge
 3. webpack.prod.js包含生产的代码.
 
 利用webpack-merge,可以将common的代码合入到dev和生产的代码.
+## Caching
+当我们正在用webpack去打包自己的模块化程序(modular application)时会产生一个可部署的`/dist`目录.
+一旦`/dist`里的内容发版到服务器后,客户端(clients)会访问(hit)服务器去拿到(to grap)网站和资源.这一步是非常耗时的(The last step can be time consuming).这是为什么浏览器用了一个缓存的技术.允许网站载入的更快,不需要用过多的网络流量.然而当你需要拾起new code时,会有头痛的问题.
+### Output Filenames
+最简单的解决办法是改变输出的文件名,可以用[hash]或者[contenthash]来替换输出的文件名,推荐用[contenthash]因为内容的hash不会重复.
