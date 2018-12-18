@@ -116,6 +116,19 @@
 :::
 #### 多行修饰符
 ### 实例
+##### 匹配手机号
+```js
+function inputmobile(obj) {
+    obj.value = obj.value.replace(/\D+/g,'');
+    if (obj.value.length >=11) { 
+        obj.value = obj.value.substr(0,11);
+        var myreg = /^(((13[0-9])|(14[579])|(15([0-3]|[5-9]))|(16[6])|(17[0135678])|(18[0-9])|(19[89]))+\d{8})$/g; 
+        if(!myreg.test(obj.value)) {
+            obj.value = '请输入正确的手机号';
+        }  
+    }
+}
+```
 
 [在线学习RegEx](https://regexr.com/)<br>
 [参考](https://github.com/ziishaned/learn-regex/blob/master/README-cn.md)
