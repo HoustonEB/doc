@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,16 +28,63 @@
             word-wrap: break-word;
             word-break: break-all;
         }
+
+        .white-space {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+        }
+
+        .white-space1 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            white-space: nowrap;
+        }
+
+        .white-space2 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid green;
+            white-space: pre;
+        }
+
+        .white-space3 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid green;
+            white-space: pre-wrap;
+        }
+
+        .white-space4 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid orange;
+            white-space: pre-line;
+        }
     </style>
 </head>
+
 <body>
     <!-- 文本溢出隐藏 -->
     <div class="text-overflow">
-        文本溢出隐藏===================黄四大行i说说滴是啥<br/>
-        sdjosfd哈 <hr />好的josjfo
+        文本溢出隐藏===================黄四大行i说说滴是啥<br />
+        sdjosfd哈
+        <hr />好的josjfo
     </div>
     <div class="word-wrap">
         换手机抖擞精看 this is a applefdsfsdfsdfsdsdfsfs 收快递时间好快大河坎电圣诞节哦i收到
     </div>
+    <div class="white-space">尽快 是多久薇
+        薇<br />卡撒好 得快</div>
+    <div class="white-space1">手机斐林 试剂 砥砺
+        奋进哦i额</div>
+    <div class="white-space2">手机斐林 试剂 砥砺
+        奋进<br />哦i额</div>
+    <div class="white-space3">手机斐林 试剂 砥砺
+        奋进<br />哦i额</div>
+    <div class="white-space4">手机斐林 试剂 砥砺
+        奋进<br />哦i额fsfsfasfsaf舒服舒服说</div>
 </body>
+
 </html>
