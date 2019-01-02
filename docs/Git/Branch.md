@@ -1,5 +1,3 @@
-# branch 的使用
----
 #### 基本命令
 ``` bash
 // 查看历史记录的版本id号
@@ -17,6 +15,7 @@ git reset --hard 版本号
  - 现在可以回退到最新的操作了
  `git reset --hard 版本号`
  -------------------------------------
+ ### branch管理
 ``` bash
 // 查看分支
 git branch
@@ -40,7 +39,7 @@ git merge develop
   - 用 ***release*** 分支存放将要发版的代码
   - 用 ***master*** 分支push
 ---
-# git push
+### git push
 分支如果要推送到远程分支,需要关联remote的branch,后续才能简化push过程=>git push
 ```shell
 // 关联远程分支mac
@@ -49,4 +48,9 @@ git push --set-upstream origin mac => git push -u origin mac
 git push
 // 主动让分支关联远程分支
 git branch --set-upstream-to=origin/<remote-branch-name> mac
+```
+### git 清楚缓存
+.gitignore.如果没生效是缓存没清.
+```shell
+git rm -r --cached .
 ```
