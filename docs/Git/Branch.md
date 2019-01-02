@@ -49,8 +49,11 @@ git push
 // 主动让分支关联远程分支
 git branch --set-upstream-to=origin/<remote-branch-name> mac
 ```
-### git 清楚缓存
+### git 清除缓存
 .gitignore.如果没生效是缓存没清.
 ```shell
 git rm -r --cached .
 ```
+### git rebase
+### git cherry-pick
+[学习git](https://learngitbranching.js.org/?demo)
