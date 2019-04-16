@@ -92,6 +92,12 @@ module.exports = {
         children: [
           ['/RegExr/RegExr', '正则匹配表达式']
         ]
+      },
+      {
+        title: '适配问题',
+        children: [
+          ['/Adaptive/Mobile', '移动端适配']
+        ]
       }
     ]
   }
