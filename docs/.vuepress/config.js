@@ -98,6 +98,12 @@ module.exports = {
         children: [
           ['/Adaptive/Mobile', '移动端适配']
         ]
+      },
+      {
+        title: '工具',
+        children: [
+          ['/Tool/Fiddler', '抓包工具Fiddler']
+        ]
       }
     ]
   }
